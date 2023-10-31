@@ -1,0 +1,90 @@
+<div class="contact-formm">
+    <h2 style="color: white;">Get a call, reach to us!</h2>
+    <form action="upper_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+
+<style>
+    .slider-container {
+        position: relative;
+    }
+
+    .slider-content {
+        float: left;
+        width: 50%;
+        padding: 20px;
+    }
+
+    .contact-formm {
+        position: absolute;
+        top: 2%;
+        right: 8%;
+        width: 650px;
+        /* Adjust the width of the form */
+        background-color: #3B414C;
+        color: white;
+        padding: 30px;
+        /* Adjust the padding inside the form */
+        z-index: 2;
+        /* Ensure the form is on top of other elements */
+    }
+
+
+    /* Additional styling for form elements */
+    form {
+        margin-top: 10px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        /* Increase margin for labels */
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: calc(100% - 20px);
+        /* Adjust the width of input fields */
+        padding: 10px;
+        /* Adjust padding inside input fields */
+        margin-bottom: 15px;
+        /* Increase margin for input fields */
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 24px;
+        /* Adjust padding inside the submit button */
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    @media screen and (max-width: 768px) {
+        .contact-formm {
+            display: none;
+        }
+
+        .slider-content {
+            float: left;
+            width: 100%;
+            padding: 20px;
+        }
+    }
+</style>
